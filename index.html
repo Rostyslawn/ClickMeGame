@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru-en">
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="globalstyles.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web site created by Rostyslawn">
     <title>CLICK!</title>
 </head>
 <body>
 <div class="clicker">
     <div class="display">
         <div id="counter"></div>
-        <button id="button">Click me!</button> <br>
-        <button id="reset">Reset</button> <br>
+        <button class="btn" id="button">Click me!</button> <br>
+        <button class="btn" id="reset">Reset</button> <br>
+        <button class="btn" id="shop">Shop</button>
     </div>
     <div class="resetmenu">
         <div>Do you want to reset score?</div>
-        <button id="yesreset">Yes</button>
-        <button id="back">No</button>
+        <button class="btn" id="yesreset">Yes</button>
+        <button class="btn" id="No">No</button>
     </div>
-    <button id="close">Close</button>
-    <button class="updates">
+    <div class="shopmenu">
+        <button class="btn" id="textShop">Shop</button>
+        <div class="shop-items">
+            <button class="btn shop-item" id="x2clicks">x2 clicks <br> <div>price: 1000 clicks</div></button> <br>
+        </div>
+        <button class="btn" id="back">Back</button>
+    </div>
+    <button class="updates btn">
         News <br> & <br> Updates
+    </button> <br>
+    <button class="author">
+        Author:
+        <a target="_blank" href="https://github.com/Rostyslawn/Rostyslawn">Rostyslawn</a>
     </button>
 </div> 
 <script src="script.js"></script>
